@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+
+    background: url('../assets/Pokémon-Logotipo.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+h1{
+    margin: 10px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #ffcb05;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    font: inherit;
+    letter-spacing: 2px;
+    color: #ffcb05;
+    background-color: transparent;
+    border: 2px solid #ffcb05;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.btn-prev:hover{
+    background-color:#ffcb05;
+    
+    box-shadow: 0 0 60px #ffcb05;
+    cursor: pointer;
+
+    
+}
+
+
+
+button:hover::after{
+    transform: 
+    translate (-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+button:hover{
+    color: transparent;
+}
+
+button {
+    position: fixed; /* Define a posição do botão como fixa */
+    bottom: 0; /* Define a distância do botão em relação à parte inferior da página */
+    left: 50%; /* Define a distância do botão em relação à esquerda da página */
+    transform: translateX(-50%); /* Centraliza horizontalmente o botão */
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+input{
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-weight: 600px;
+    color: #000000;
+    font-size: 1.2rem;
+    box-shadow: -3px 4px 0 #000000;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: transparent;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative  ;
+
+}
+
+
+
+
+
+.pokemon_image{
+    position: absolute;
+    bottom: 100px;
+    left: 570px;
+    top: 50px;
+    
+
+}
+
+.pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+    top: 70%;
+    left: 46%;
+    bottom: 34%;
+    font-size: clamp();
+}
+
+.pokemon_name{
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+
+img{
+    position: absolute;
+    width: 250px;
+    left: 10%;
+}
